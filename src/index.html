@@ -12,14 +12,17 @@
     <title>Wish Books</title>
   </head>
   <body>
-    <div class="container">
+    <a href="#menu" accesskey="m" class="acessible-link acessible-hide">Ir para menu</a>
+    <a href="#livros" accesskey="c" class="acessible-link">Ir para conteúdo principal</a>
+    <a href="#footer" accesskey="r" class="acessible-link">Ir para rodapé</a>
+    <div class="container" id="menu">
       <nav>
         <ul class="nav__links nav__left">
           <li><a href="#" class="logo">WishBooks</a></li>
           <li><a href="#livros">Livros</a></li>
         </ul>
         <ul class="nav__links nav__right">
-          <li><a href="#">Contato</a></li>
+          <li><a class="contact" href="#">Contato</a></li>
         </ul>
       </nav>
       <span class="letter-b">B</span>
@@ -28,6 +31,7 @@
       <h4 class="text__right">OOKS</h4>
       <button class="btn explore" ><a href="#social">SAIBA MAIS</a></button>     
     </div>
+    
     <div class="cont_livros" id="livros">
       <p class="text">Livros</p>
     <div class="flex_container">
@@ -45,7 +49,26 @@
       <img class="capa-livro" src="/src/assets/img/carmilla_mi_capa.png" alt="">
     </div>
   </div>
-
+  <dialog>
+    <button class="btn-close"><i class="fa-solid fa-xmark"></i></button>
+    <section class="form">
+      <form action="">
+        <h2>Fale Conosco</h2>
+        <input type="text" class="input-required" placeholder="Nome" oninput="nameValidate()" required>
+        <span class="span-required"><i class="fa-solid fa-triangle-exclamation"></i>O nome deve conter no mínimo 3 caracteres</span>
+        <input type="email" class="input-required" placeholder="Email" oninput="emailValidate()" required>
+        <span class="span-required"><i class="fa-solid fa-triangle-exclamation"></i>Digite um e-mail válido</span>
+        <input type="tel" maxlength="15" placeholder="Celular" onkeyup="handlePhone(event)">
+        <textarea class="input-required" placeholder="Digite sua mensagem aqui" oninput="messageValidate()" required></textarea>
+        <span class="span-required"><i class="fa-solid fa-triangle-exclamation"></i>Escreva a mensagem para prosseguir</span>
+        <div class="btn-enviar">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </section>
+    
+  </dialog>
+  
     <footer class="footer">
       <p>Copyright © 2024. All rights reserved.</p>
       <div class="footer__icons" id="social">
