@@ -1,84 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="shortcut icon" href="/src/assets/img/books.png">
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="/src/css/styles.css" />
     <title>Wish Books</title>
-  </head>
-  <body>
+</head>
+<body>
     <a href="#menu" accesskey="m" class="acessible-link acessible-hide">Ir para menu</a>
     <a href="#livros" accesskey="c" class="acessible-link">Ir para conteúdo principal</a>
     <a href="#footer" accesskey="r" class="acessible-link">Ir para rodapé</a>
+
     <div class="container" id="menu">
-      <nav>
-        <ul class="nav__links nav__left">
-          <li><a href="#" class="logo">WishBooks</a></li>
-          <li><a href="#livros">Livros</a></li>
-        </ul>
-        <ul class="nav__links nav__right">
-          <li><a class="contact" href="#">Contato</a></li>
-        </ul>
-      </nav>
-      <span class="letter-b">B</span>
-      <img src="/src/assets/img/books.png" alt="livros" />
-      <h4 class="text__left">WISH</h4>
-      <h4 class="text__right">OOKS</h4>
-      <button class="btn explore" ><a href="#social">SAIBA MAIS</a></button>     
+        <nav aria-label="Menu principal">
+            <ul class="nav__links nav__left">
+                <li><a href="#" class="logo" aria-label="WishBooks Home">WishBooks</a></li>
+                <li><a href="#livros">Livros</a></li>
+            </ul>
+            <ul class="nav__links nav__right">
+                <li><a class="contact" href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <span class="letter-b" aria-hidden="true">B</span>
+        <img src="/src/assets/img/books.png" alt="Imagem de livros" />
+        <h4 class="text__left">WISH</h4>
+        <h4 class="text__right">OOKS</h4>
+        <button class="btn explore"><a href="#social">SAIBA MAIS</a></button>
     </div>
-    
-    <div class="cont_livros" id="livros">
-      <p class="text">Livros</p>
-    <div class="flex_container">
-      <img class="capa-livro" src="/src/assets/img/anatomia_de_uma_exec_mini_capa.png" alt="">
-      <img class="capa-livro" src="/src/assets/img/causas_nao_naturais_mini_capa.png" alt="">
-      <img class="capa-livro" src="/src/assets/img/lendas_japonesas_mini_capa.png" alt="">
-      <img class="capa-livro" src="/src/assets/img/nacao_tomada_pelo_mini_capa.png" alt="">
-      <img class="capa-livro" src="/src/assets/img/manual_pratico_das_runas_mini_capa.png" alt="">
-      <img class="capa-livro" src="/src/assets/img/bruxa-natural-3-Capa.png" alt="">
-      <img class="capa-livro" src="/src/assets/img/nem_tudo_que_resta_mini_capa.png" alt="">
-      <img class="capa-livro" src="/src/assets/img/oraculo-floresta-thumbnail.webp" alt="">
-      <img class="capa-livro" src="/src/assets/img/a_danca_na_floresta_mi_capa.png" alt="">
-      <img class="capa-livro" src="/src/assets/img/contos_de_fadas_celtas_mi_capa.png" alt="">
-      <img class="capa-livro" src="/src/assets/img/damas_ferozes_mini_capa.png" alt="">
-      <img class="capa-livro" src="/src/assets/img/carmilla_mi_capa.png" alt="">
-    </div>
-  </div>
-  <dialog>
-    <button class="btn-close"><i class="fa-solid fa-xmark"></i></button>
-    <section class="form">
-      <form action="">
-        <h2>Fale Conosco</h2>
-        <input type="text" class="input-required" placeholder="Nome" oninput="nameValidate()" required>
-        <span class="span-required"><i class="fa-solid fa-triangle-exclamation"></i>O nome deve conter no mínimo 3 caracteres</span>
-        <input type="email" class="input-required" placeholder="Email" oninput="emailValidate()" required>
-        <span class="span-required"><i class="fa-solid fa-triangle-exclamation"></i>Digite um e-mail válido</span>
-        <input type="tel" maxlength="15" placeholder="Celular" onkeyup="handlePhone(event)">
-        <textarea class="input-required" placeholder="Digite sua mensagem aqui" oninput="messageValidate()" required></textarea>
-        <span class="span-required"><i class="fa-solid fa-triangle-exclamation"></i>Escreva a mensagem para prosseguir</span>
-        <div class="btn-enviar">
-          <input type="submit" value="Enviar">
+
+    <main class="cont_livros" id="livros">
+        <h2 class="text">Livros</h2>
+        <div class="flex_container">
+            <img class="capa-livro" src="/src/assets/img/anatomia_de_uma_exec_mini_capa.png" alt="Capa do livro Anatomia de uma Execução">
+            <img class="capa-livro" src="/src/assets/img/causas_nao_naturais_mini_capa.png" alt="Capa do livro Causas Não Naturais">
+            <img class="capa-livro" src="/src/assets/img/lendas_japonesas_mini_capa.png" alt="Capa do livro Lendas Japonesas">
+            <img class="capa-livro" src="/src/assets/img/nacao_tomada_pelo_mini_capa.png" alt="Capa do livro Nação Tomada">
+            <img class="capa-livro" src="/src/assets/img/manual_pratico_das_runas_mini_capa.png" alt="Capa do livro Manual Prático das Runas">
+            <img class="capa-livro" src="/src/assets/img/bruxa-natural-3-Capa.png" alt="Capa do livro Bruxa Natural">
+            <img class="capa-livro" src="/src/assets/img/nem_tudo_que_resta_mini_capa.png" alt="Capa do livro Nem Tudo Que Resta">
+            <img class="capa-livro" src="/src/assets/img/oraculo-floresta-thumbnail.webp" alt="Capa do livro Oráculo da Floresta">
+            <img class="capa-livro" src="/src/assets/img/a_danca_na_floresta_mi_capa.png" alt="Capa do livro A Dança na Floresta">
+            <img class="capa-livro" src="/src/assets/img/contos_de_fadas_celtas_mi_capa.png" alt="Capa do livro Contos de Fadas Celtas">
+            <img class="capa-livro" src="/src/assets/img/damas_ferozes_mini_capa.png" alt="Capa do livro Damas Ferozes">
+            <img class="capa-livro" src="/src/assets/img/carmilla_mi_capa.png" alt="Capa do livro Carmilla">
         </div>
-      </form>
-    </section>
-    
-  </dialog>
-  
-    <footer class="footer">
-      <p>Copyright © 2024. All rights reserved.</p>
-      <div class="footer__icons" id="social">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-tiktok"></i>
-        <i class="fa-brands fa-twitter"></i>
-      </div>
+    </main>
+
+    <dialog aria-labelledby="dialog-title">
+        <button class="btn-close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+        <section class="form">
+            <form action="">
+                <h2 id="dialog-title">Fale Conosco</h2>
+                <input type="text" class="input-required" placeholder="Nome" oninput="nameValidate()" required aria-required="true">
+                <span class="span-required"><i class="fa-solid fa-triangle-exclamation"></i>O nome deve conter no mínimo 3 caracteres</span>
+                <input type="email" class="input-required" placeholder="Email" oninput="emailValidate()" required aria-required="true">
+                <span class="span-required"><i class="fa-solid fa-triangle-exclamation"></i>Digite um e-mail válido</span>
+                <input type="tel" maxlength="15" placeholder="Celular" onkeyup="handlePhone(event)">
+                <textarea class="input-required" placeholder="Digite sua mensagem aqui" oninput="messageValidate()" required aria-required="true"></textarea>
+                <span class="span-required"><i class="fa-solid fa-triangle-exclamation"></i>Escreva a mensagem para prosseguir</span>
+                <div class="btn-enviar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </dialog>
+
+    <footer class="footer" id="footer">
+        <p>Copyright © 2024. All rights reserved.</p>
+        <div class="footer__icons" id="social">
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/pt-BR/" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://x.com/?lang=pt-br" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
     </footer>
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/src/js/main.js"></script>
     <script src="https://kit.fontawesome.com/52d98fe718.js" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>

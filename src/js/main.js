@@ -32,10 +32,6 @@ const scrollRevealOption = {
     interval: 500,
     delay: 3000,
   });
-  ScrollReveal().reveal(".footer p", {
-    duration: 1000,
-    delay: 1000,
-  });
   ScrollReveal().reveal(".text", {
     duration: 1200,
     delay: 1200,
