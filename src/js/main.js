@@ -41,13 +41,19 @@ const scrollRevealOption = {
   const button = document.querySelector(".contact");
   const modal = document.querySelector("dialog");
   const buttonClose = document.querySelector("dialog button");
+  const body = document.body;
   
 button.onclick = function () {
   modal.showModal();
+  body.setAttribute('ariahidden', true);
+  body.setAttribute('tabindex', '-1');
+
 };
 
 buttonClose.onclick = function () {
   modal.close();
+  body.setAttribute('ariahidden', false);
+  body.setAttribute('tabindex', '0');
 };
 
 
