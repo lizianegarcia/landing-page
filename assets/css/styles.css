@@ -289,8 +289,8 @@ nav {
     border: none;
     border-radius: .5rem;
     box-shadow: bisque;
-    width: calc(100% - 32px);
-    padding: 32px;
+    width: calc(100% - 1rem);
+    padding: 1rem;
     max-width: 80%;
     background-color: bisque;
   }
@@ -306,9 +306,6 @@ nav {
     border: none;
   }
 
-  section.form {
-    padding: 40px 4%;
-   }
 
    form {
     max-width: 500px;
@@ -342,7 +339,7 @@ nav {
    }
 
    form input, form textarea {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     font-family: "Noto Sans JP", sans-serif;
     width: 100%;
     background-color: #fdc873;
@@ -506,4 +503,5 @@ nav {
      .capa-livro { 
       width: 16rem;
     }
+
 }
