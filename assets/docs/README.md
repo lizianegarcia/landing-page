@@ -26,7 +26,8 @@ Visite a Wish Books e comece sua jornada através de mundos mágicos, histórias
 * Javascript: \
 Animações via js; \
 Validação dos campos do formulário com regex e quantidade mínima de caracteres; \
-Mensagem de erro quando o input não está preenchido corretamnete;
+Mensagem de erro quando o input não está preenchido corretamente; \
+Modal com form de contato.
 
 
 * Acessibilidade para leitores de tela e links âncora e teclas de atalho para facilitar a navegação via tab;
