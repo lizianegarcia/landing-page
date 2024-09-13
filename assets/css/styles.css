@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 
 :root {
-  --primary-color: #1c897a;
-  --text-dark: #fc6c6b;
+  --primary-green: #1c897a;
+  --primary-red: #fc6c6b;
+  --primary-yellow: #feb848;
+  --secondary-yellow: #fdc873;
+  --bisque:#ffe4c4;
   --white: #ffffff;
   --max-width: 1200px;
 }
@@ -29,7 +32,7 @@ a {
 
 body {
   font-family: "Noto Sans JP", sans-serif;
-  background-color: #feb848;
+  background-color: var(--primary-yellow);
 }
 
 body::after {
@@ -39,7 +42,7 @@ body::after {
   width: 0;
   top: 0;
   right: 0;
-  background-color: var(--text-dark);
+  background-color: var(--primary-red);
   z-index: -1;
   animation: body-bg 1s ease-in-out forwards;
 }
@@ -100,7 +103,7 @@ nav {
 }
 
 .nav__left a {
-  color: var(--text-dark);
+  color: var(--primary-red);
 }
 
 .nav__right a {
@@ -108,7 +111,7 @@ nav {
 }
 
 .nav__links a:hover {
-  color: var(--primary-color);
+  color: var(--primary-green);
 }
 
 .letter-b {
@@ -119,7 +122,7 @@ nav {
   font-size: 40rem;
   line-height: 40rem;
   font-weight: 900;
-  color: var(--primary-color);
+  color: var(--primary-green);
 }
 
 .container img {
@@ -157,14 +160,14 @@ nav {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
   text-decoration: none;
 }
+
 .container .explore a {
-  color: var(--text-dark);
+  color: var(--primary-red);
 }
 
 .container .explore:hover {
-  background-color: #fdc873;
+  background-color: var(--secondary-yellow);
 }
-
 
 .container h5 {
   position: absolute;
@@ -185,6 +188,7 @@ nav {
 .footer {
   position: absolute;
   left: 50%;
+  margin-top: 2%;
   transform: translateX(-50%);
   width: 100%;
   padding-inline: 1rem;
@@ -196,7 +200,7 @@ nav {
 
 .footer p {
   font-size: 0.9rem;
-  color: var(--text-dark);
+  color: var(--primary-red);
 }
 
 .footer__links {
@@ -215,9 +219,11 @@ nav {
 .footer__links li:nth-child(1) {
   animation-delay: 6s;
 }
+
 .footer__links li:nth-child(2) {
   animation-delay: 6.5s;
 }
+
 .footer__links li:nth-child(3) {
   animation-delay: 7s;
 }
@@ -238,24 +244,24 @@ nav {
 }
 
 .footer__icons i:hover {
-  color: var(--primary-color);
+  color: var(--primary-green);
 }
 
-.flex_container{
-      display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 0.625rem;
-    padding-inline-start: 0;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-} 
+.flex_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 0.625rem;
+  padding-inline-start: 0;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-.text {  
+.text {
   font-size: 2rem;
   font-weight: 900;
   color: var(--white);
@@ -264,7 +270,22 @@ nav {
   text-align: center;
 }
 
-.cont_livros {
+.sub-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-green);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.text-description {
+  font-size: 1.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.cont_books {
   width: 100%;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -272,141 +293,135 @@ nav {
   margin-left: auto;
 }
 
-.capa-livro { 
+.book-cover {
   width: 20rem;
   margin-top: 1rem;
   position: relative;
 }
- 
-  
-  dialog ::backdrop {
-    background-color:bisque;
+
+dialog ::backdrop {
+  background-color: var(--bisque);
+}
+
+dialog {
+  align-self: center;
+  margin-left: 10%;
+  border: none;
+  border-radius: .5rem;
+  box-shadow: var(--bisque);
+  width: calc(100% - 1rem);
+  padding: 1rem;
+  max-width: 80%;
+  background-color: var(--bisque);
+}
+
+.btn-close {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  color: var(--primary-green);
+  font-weight: 500;
+  padding: .5rem;
+  margin-left: 95%;
+  background-color: var(--bisque);
+  border: none;
+  cursor: pointer;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
   }
 
-  dialog {
-    align-self: center;
-    margin-left: 10%;
-    border: none;
-    border-radius: .5rem;
-    box-shadow: bisque;
-    width: calc(100% - 1rem);
-    padding: 1rem;
-    max-width: 80%;
-    background-color: bisque;
+  .btn-enviar input[type="submit"] {
+    width: 120px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .1rem;
   }
 
-  .btn-close {
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 24px;
-    color: #1c897a;
-    font-weight: 500;
-    padding: .5rem;
-    margin-left: 95%;
-    background-color: bisque;
-    border: none;
-  }
-
-
-   form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    .btn-enviar {
-      margin-top: 20px;
-      text-align: center;
-    }
-
-    .btn-enviar input[type="submit"] {
-      width: 120px;
-      cursor: pointer;
-      text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: .1rem;
-    }
-
-    h2 {
+  h2 {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
-    color: var(--primary-color);;
+    color: var(--primary-green);
+    ;
     align-self: center;
     margin-bottom: 2rem;
-    }
+  }
 
-   }
+}
 
-   form input, form textarea {
-    margin-top: 1.5rem;
-    font-family: "Noto Sans JP", sans-serif;
-    width: 100%;
-    background-color: #fdc873;
-    border:  #fdc873;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: .5rem;
-    color: bisque;
-    font-size: 18px;
+form input,
+form textarea {
+  margin-top: 1.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+  width: 100%;
+  background-color: var(--secondary-yellow);
+  border: var(--secondary-yellow);
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: .5rem;
+  color: var(--bisque);
+  font-size: 18px;
+  &::placeholder {
+    color: var(--bisque);
+  }
+  &:hover {
+    background-color: var(--primary-yellow);
 
-    &::placeholder {
-      color:bisque;
-    }
+  }
+  &:focus {
+    border: 2px solid var(--primary-red);
+  }
+}
 
-    &:hover{
-      background-color: #feb848;
+form textarea {
+  resize: none;
+  max-height: 200px;
+}
 
-    }
+.span-required {
+  font-size: 12px;
+  display: none;
+  margin: 3px 0 0 1px;
+  color: var(--primary-red);
+  font-weight: 700;
+  i {
+    padding-right: 2px;
+  }
 
-    
-    &:focus{
-      border: 2px solid #fc6c6b;
-    }
-   }
+}
 
-   form textarea {
-    resize: none;
-    max-height: 200px;
-   }
-
-   .span-required {
-    font-size: 12px;
-    display: none;
-    margin: 3px 0 0 1px;
-    color: #fc6c6b;
-    font-weight: 700;
-
-    i {
-      padding-right: 2px;
-    }
-
-   }
-
-
-   .acessible-link {
-    position: absolute;
-    top: -1000px;
-    z-index: 99999;
-    padding: 10px 20px;
-    overflow: hidden;
-    font-weight: 700;
-    color: #fc6c6b;
-    background-color: var(--primary-color);
-    width: max-content;
-    border-bottom-right-radius: .3rem;
-    transition: top .3s;
-    -ms-transition: top .3s;
-    -webkit-transition: top .3s;
-    -moz-transition: top .3s;
-    -o-transition: top .3s;
-    text-decoration: none;
+.acessible-link {
+  position: absolute;
+  top: -1000px;
+  z-index: 99999;
+  padding: 10px 20px;
+  overflow: hidden;
+  font-weight: 700;
+  color: var(--primary-red);
+  background-color: var(--primary-green);
+  width: max-content;
+  border-bottom-right-radius: .3rem;
+  transition: top .3s;
+  -ms-transition: top .3s;
+  -webkit-transition: top .3s;
+  -moz-transition: top .3s;
+  -o-transition: top .3s;
+  text-decoration: none;
 }
 
 .acessible-link:active,
 .acessible-link:focus,
 .acessible-link:hover {
-  top:0;
+  top: 0;
 }
 
 
@@ -414,34 +429,39 @@ nav {
   .letter-b {
     font-size: 25rem;
     line-height: 35rem;
+  }
+  body::after {
+    background-color: var(--primary-yellow);
+  }
+  .nav__right a {
+    color: var(--primary-red);
+  }
+  .container h4 {
+    display: none;
+  }
+  section.form {
+    padding: 20px 2%;
+    h2 {
+      margin-bottom: 0;
+      font-size: 1.5rem;
     }
-    body::after { 
-      background-color: #feb848;
-    }
-    .nav__right a {
-      color: #fc6c6b;
-    }
-    .container h4 {
-      display: none;
-    }
-
-    section.form {
-      padding: 20px 2%;
-
-      h2 {
-        margin-bottom: 0;
-        font-size: 1.5rem;
-      }
-     }
-
-     form input, form textarea {
-      margin-top: 1rem;
-      padding: 20px 16px;
-      font-size: 16px;
-     }
-     .capa-livro { 
-      width: 16rem;
-    }
+  }
+  form input,
+  form textarea {
+    margin-top: 1rem;
+    padding: 20px 16px;
+    font-size: 16px;
+  }
+  .book-cover {
+    width: 16rem;
+  }
+  .text {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+  }
+  .text-description {
+    font-size: 1rem;
+  }
 }
 
 
@@ -449,59 +469,54 @@ nav {
   .letter-b {
     font-size: 20rem;
     line-height: 30rem;
-    }
-
-    .container img {
-      max-width: 100px;
-    }
-
-    body::after { 
-      background-color: #feb848;
-    }
-
-    .nav__right a {
-      color: #fc6c6b;
-    }
-    .container h4 {
+  }
+  .container img {
+    max-width: 100px;
+  }
+  body::after {
+    background-color: var(--primary-yellow);
+  }
+  .nav__left {
+    .more {
       display: none;
     }
-    .footer {
-      display: grid;
-      
+  }
+  .nav__right a {
+    color: var(--primary-red)
+  }
+  .container h4 {
+    display: none;
+  }
+  .footer {
+    display: grid;
+    margin-top: 10%;
+  }
+  .footer__icons {
+    display: flex;
+    justify-content: center;
+  }
+  dialog {
+    margin-left: 5%;
+    padding: 16px;
+    max-width: 90%;
+  }
+  .btn-close {
+    padding: 0;
+  }
+  section.form {
+    padding: 20px 2%;
+    h2 {
+      margin-bottom: 0;
+      font-size: 1.5rem;
     }
-
-    .footer__icons {
-      display: flex;
-      justify-content: center;
-    }
-
-    dialog {
-      margin-left: 5%;
-      padding: 16px;
-      max-width: 90%;
-    }
-
-    .btn-close {
-      padding: 0;
-    }
-
-    section.form {
-      padding: 20px 2%;
-
-      h2 {
-        margin-bottom: 0;
-        font-size: 1.5rem;
-      }
-     }
-
-     form input, form textarea {
-      margin-top: 1rem;
-      padding: 15px 10px;
-      font-size: 14px;
-     }
-
-     .capa-livro { 
-      width: 16rem;
-    }
-
+  }
+  form input,
+  form textarea {
+    margin-top: 1rem;
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+  .book-cover {
+    width: 16rem;
+  }
 }

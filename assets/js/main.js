@@ -33,8 +33,8 @@ const scrollRevealOption = {
     delay: 3000,
   });
   ScrollReveal().reveal(".text", {
-    duration: 1200,
-    delay: 1200,
+    duration: 400,
+    delay: 800,
   });
 
 // ------- MODAL ---------
@@ -45,6 +45,7 @@ const scrollRevealOption = {
   
 button.onclick = function () {
   modal.showModal();
+  buttonClose.focus();
   body.setAttribute('ariahidden', true);
   body.setAttribute('tabindex', '-1');
 
@@ -55,7 +56,6 @@ buttonClose.onclick = function () {
   body.setAttribute('ariahidden', false);
   body.setAttribute('tabindex', '0');
 };
-
 
 // ----------- VALIDAÇÃO DE CAMPOS FORM -------------
 const form = document.querySelector(".form");
