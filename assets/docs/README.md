@@ -22,16 +22,19 @@ Visite a Wish Books e comece sua jornada através de mundos mágicos, histórias
 ## 3. Descrição do Projeto :open_file_folder:
 ### Tecnologias Utilizadas:
 * HTML
+HTML semântico com a utilização de boas práticas em acessibilidade; \
 * CSS
+Utilização de variáveis; \
+Utilização de grid na section; \
+Media queries para a responsividade em disposivos móveis como tablet e smartphones; \
 * Javascript: \
 Animações via js; \
 Validação dos campos do formulário com regex e quantidade mínima de caracteres; \
 Mensagem de erro quando o input não está preenchido corretamente; \
 Modal com form de contato.
 
-
-* Acessibilidade para leitores de tela e links âncora e teclas de atalho para facilitar a navegação via tab;
-  
+* Acessibilidade para leitores de tela, links âncora e teclas de atalho para facilitar a navegação via tab/teclado;
+Teste realizado com NVDA 2024.3.
 
 
 

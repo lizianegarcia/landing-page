@@ -108,7 +108,6 @@ function messageValidate () {
   }
 };
 
-
 form.addEventListener('submit', e => {
   e.preventDefault();
   nameValidate();
