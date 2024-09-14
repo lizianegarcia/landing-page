@@ -1,4 +1,4 @@
-<img src="../assets/img/books.png" height="100px">
+<img src="../assets/images/books.png" height="100px" alt="Imagem de livros">
 
 # WISH BOOKS 
 Landing Page desenvolvida para a Matéria de Desenvolvimento Web do curso de Análise e Desenvolvimento de Sistemas da URI.
@@ -38,6 +38,11 @@ Modal com form de contato.
 
 * Acessibilidade para leitores de tela, links âncora e teclas de atalho para facilitar a navegação via tab/teclado;
 Teste realizado com NVDA 2024.3.
+
+<img src="../assets/images/section-1.png" alt="Print da primeira seção do site com menu contendo a seção de Livros, Saiba Mais e Contato">
+<img src="../assets/images/section-2.png" alt="Print da segunda seção do site contendo um título: Livros e algumas capas de livros">
+<img src="../assets/images/section-3.png" alt="Print da terceira seção do site contando sobra a história da Wish Books">
+<img src="../assets/images/footer.png" alt="Print do footer do site contento uma mensagem de copyright e icones com links de acessos para as redes sociais (Instagram, tiktok e X (twitter))">
 
 
 
