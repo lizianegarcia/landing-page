@@ -1,14 +1,17 @@
+<img src="../img/books.png" height="100px">
+
 # WISH BOOKS 
 Landing Page desenvolvida para a Matéria de Desenvolvimento Web do curso de Análise e Desenvolvimento de Sistemas da URI.
 
+
 ## :round_pushpin: Índice
 
-* [1. Sobre o projeto](#1-sobre-o-projeto)
+* [1. Sobre o Projeto](#1-sobre-o-projeto)
 * [2. Resumo do Projeto](#2-resumo-do-projeto)
 * [3. Descrição do Projeto](#3-descrição-do-projeto)
 
 
-## 1. Sobre o projeto :computer:
+## 1. Sobre o Projeto :computer:
 Projeto desenvolvido para a disciplina de Desenvolvimento de Software que consiste no desenvolvimento de uma landing page utilizando as tecnologias HTML, CSS e JavaScript. 
 
 ## 2. Resumo do Projeto :page_facing_up:
@@ -21,12 +24,12 @@ Visite a Wish Books e comece sua jornada através de mundos mágicos, histórias
 
 ## 3. Descrição do Projeto :open_file_folder:
 ### Tecnologias Utilizadas:
-* HTML
-HTML semântico com a utilização de boas práticas em acessibilidade; \
-* CSS
+* HTML \
+HTML semântico com a utilização de boas práticas em acessibilidade; 
+* CSS \
 Utilização de variáveis; \
 Utilização de grid na section; \
-Media queries para a responsividade em disposivos móveis como tablet e smartphones; \
+Media queries para a responsividade em disposivos móveis como tablet e smartphones; 
 * Javascript: \
 Animações via js; \
 Validação dos campos do formulário com regex e quantidade mínima de caracteres; \
