@@ -1,4 +1,4 @@
-<img src="../img/books.png" height="100px">
+<img src="../assets/img/books.png" height="100px">
 
 # WISH BOOKS 
 Landing Page desenvolvida para a Matéria de Desenvolvimento Web do curso de Análise e Desenvolvimento de Sistemas da URI.
